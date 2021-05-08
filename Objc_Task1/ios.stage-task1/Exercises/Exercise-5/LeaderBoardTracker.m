@@ -65,12 +65,10 @@
             //не nil, т.е не первая позиция
             rankFromDict = [ranks objectForKey:prev];
             [playerRanks addObject: [NSNumber numberWithInteger:(rankFromDict.integerValue + 1)]];
-            // и break
             break;
           } else {
             // т.е. первая позиция
             [playerRanks addObject: @(1)];
-            break;
           }
           
         } else if (scorePlayer == score.integerValue){
